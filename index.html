@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+          background: black;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #e28743; /* Adjust based on Figma */
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        }
+
+        .logo {
+            font-weight: 700; /* Adjust weight if needed */
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333; /* Adjust color based on Figma */
+            font-weight: 400; /* Adjust weight if needed */
+        }
+
+        .intro-section {
+          color:white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: black; /* Adjust based on Figma */
+        }
+
+        .intro-text {
+            max-width: 50%;
+        }
+
+        .intro-text h1 {
+            font-size: 2.5em; /* Adjust based on Figma */
+        }
+
+        .intro-text p {
+            font-size: 1.2em; /* Adjust based on Figma */
+            margin: 20px 0;
+        }
+
+        .btn {
+          color:black;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e28743; /* Adjust based on Figma */
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+
+        .intro-image img {
+            max-width: 100%;
+            height: 50;
+        }
+
+        .contact-section {
+          color: #e28743;
+            padding: 50px 20px;
+            background-color: black; /* Adjust based on Figma */
+        }
+
+        .contact-section h2 {
+            font-size: 2em; /* Adjust based on Figma */
+            margin-bottom: 20px;
+        }
+
+        .contact-input,
+        .contact-textarea {
+          background-color: black;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #e28743;
+            border-radius: 5px;
+        }
+
+        .contact-input:focus,
+        .contact-textarea:focus {
+          
+            outline: none;
+        }
+
+        .contact-textarea {
+          background-color: black;
+            height: 150px;
+            resize: none;
+        }
+
+        .contact-submit {
+            background-color: #e28743; /* Adjust based on Figma */
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .table-section {
+          color:white;
+            padding: 50px 20px;
+            background-color: black; /* Adjust based on Figma */
+        }
+
+        .table-section h2 {
+            font-size: 2em; /* Adjust based on Figma */
+            margin-bottom: 20px;
+            
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+          color: #e28743;
+            border: 1px solid #e28743;
+            padding: 10px;
+            text-align: left;
+        }
+
+        tfoot {
+            background-color: black; /* Adjust based on Figma */
+        }
+
+        tfoot td {
+          color: black;
+          background-color: #e28743;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Startup Logo</div>
+        <ul class="nav-links">
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#contact">About us</a></li>
+            <li><a href="#table">Contact us</a></li>
+             <li><a href="#table">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="intro" class="intro-section">
+        <div class="intro-text">
+            <h1>Startup landing page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia urna eu nulla tempor, at suscipit ex consequat.</p>
+            <a href="#contact" class="btn">Login</a>
+        </div>
+        <div class="intro-image">
+            <img src="jeff-bezos.jpg" alt="Jeff Bezos"> <!-- Ensure you have this image -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" class="contact-input">
+            <input type="email" placeholder="Your Email" class="contact-input">
+            <input type="number" placeholder="mobile number" class="contact-input">
+            <input type="text" placeholder="city" class="contact-input">
+            
+            <center><button type="submit" class="contact-submit">Submit form</button></center>
+        </form>
+    </section>
+
+    <section id="table" class="table-section">
+       
+        <table>
+            <thead>
+                <tr>
+                    <th>Sn no</th>
+                    <th>Startup Name</th>
+                    <th>Startup description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1</td>
+                    <td>Wow india</td>
+                    <td>A Startup with wow ideas</td>
+                </tr>
+                <tr>
+                    <td> 2</td>
+                    <td>Wow india</td>
+                    <td>A Startup with wow ideas</td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Wow india</td>
+                    <td>A Startup with wow ideas</td>
+                </tr>
+                <tr>
+                    <td> 4</td>
+                    <td>Wow india</td>
+                    <td>A Startup with wow ideas</td>
+                </tr>
+                
+                <!-- Add more rows as needed -->
+            </tbody>
+            <tfoot>
+                <tr>
+                  <tr>
+                    <td> 00</td>
+                    <td>Final Footer</td>
+                    <td>A start with wow ideas</td>
+                </tr>
+                   
+            </tfoot>
+        </table>
+    </section>
+</body>
+</html>
